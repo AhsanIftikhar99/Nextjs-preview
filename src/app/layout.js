@@ -24,7 +24,7 @@ export const metadata = {
     description: dynamicDescription,
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_BASE_URL || "https://yoto.ai/",
+    url: "https://nextjspreview.netlify.app",
     images: [
       {
         url: "/previewLinkImage.svg",
