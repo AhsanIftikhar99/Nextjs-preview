@@ -27,7 +27,7 @@ export const metadata = {
     url: "https://nextjspreview.netlify.app",
     images: [
       {
-        url: "/previewLinkImage.svg",
+        url: "https://nextjspreview.netlify.app/previewLinkImage.svg",
         alt: "Yoto",
       },
     ],
