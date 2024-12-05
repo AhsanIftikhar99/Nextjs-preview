@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
           <meta property="og:title" content={'Yoto'} />
           <meta name="description" content="Start recruiting with one prompt" />
           <meta property="og:description" content="Start recruiting with one prompt" />
-          <meta property="og:image" content={"https://nextjspreview.netlify.app/previewLinkImage.svg"} />
+          <meta property="og:image" content={"https://nextjspreview.netlify.app/previewLinkImage.png"} />
           <meta
             property="og:url"
             content={hostname}
