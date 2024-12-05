@@ -36,6 +36,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta property="og:title" content={dynamicTitle} />
+        <meta property="og:description" content={dynamicDescription} />
+        <meta property="og:image" content="https://nextjspreview.netlify.app/previewLinkImage.png" />
+        <meta property="og:url" content="https://nextjspreview.netlify.app" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
