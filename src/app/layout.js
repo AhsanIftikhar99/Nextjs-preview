@@ -16,26 +16,44 @@ const geistMono = localFont({
 const dynamicTitle = "Yoto";
 const dynamicDescription = "Start recruiting with one prompt";
 
-export const metadata = {
-  title: dynamicTitle,
-  description: dynamicDescription,
-  openGraph: {
-    title: dynamicTitle,
-    description: dynamicDescription,
-    type: "website",
-    locale: "en_US",
-    url: "https://nextjspreview.netlify.app",
-    images: [
-      {
-        url: "https://nextjspreview.netlify.app/previewLinkImage.svg",
-        alt: "Yoto",
-      },
-    ],
-  },
-};
+// export const metadata = {
+//   title: dynamicTitle,
+//   description: dynamicDescription,
+//   openGraph: {
+//     title: dynamicTitle,
+//     description: dynamicDescription,
+//     type: "website",
+//     locale: "en_US",
+//     url: "https://nextjspreview.netlify.app",
+//     images: [
+//       {
+//         url: "https://nextjspreview.netlify.app/previewLinkImage.svg",
+//         alt: "Yoto",
+//       },
+//     ],
+//   },
+// };
+
+const hostname = "https://nextjspreview.netlify.app";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <head>
+          <title>Yoto</title>
+          <meta property="og:title" content={'Yoto'} />
+          <meta name="description" content="Start recruiting with one prompt" />
+          <meta property="og:description" content="Start recruiting with one prompt" />
+          <meta property="og:image" content={hostname + '/previewLinkImage'} />
+          <meta
+            property="og:url"
+            content={hostname}
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:image:alt" content={'Yoto Image'} />
+        </head>
+
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
